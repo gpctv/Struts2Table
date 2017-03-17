@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+    <package name="Struts2Test" namespace="/" extends="struts-default,json-default">
+         
+        <action name="listProduct" class="listProductActionBean">
+            <result name="SUCCESS">/WEB-INF/views/ProductList.jsp</result>
+        </action>
+        <action name="productListRest" class="productListRest"  >
+            <result type="json"> 
+             <param name="root">product</param> 
+            </result>
+        </action>
+        <action name="productListSizeRest" class="productListRest"  >
+            <result type="json"> 
+             <param name="root">Size</param> 
+            </result>
+        </action>
+         
+    </package>
+    <!-- <package name="Struts2" namespace="/" extends="struts-default">
+         
+        <action name="listProduct" class="listProductActionBean">
+            <result name="SUCCESS">ProductList.jsp</result>
+        </action>
+         
+    </package> -->
+    
+</struts>
