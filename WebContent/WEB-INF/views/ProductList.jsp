@@ -11,7 +11,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript">
-var CONTEXT_PATH='${pageContext.request.contextPath}'
+var CONTEXT_PATH='${pageContext.request.contextPath}';
 </script>
 
 
@@ -42,7 +42,7 @@ var CONTEXT_PATH='${pageContext.request.contextPath}'
    <!-- 內容固定ID為TBODY -->
    <tbody id="tbody">
 </table>
-Absolute Path is:${pageContext.request.contextPath}
+Absolute Path is:<%=pageContext.request.contextPath %>
 </div>
  
 </body>
