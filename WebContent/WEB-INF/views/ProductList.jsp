@@ -42,7 +42,9 @@ var CONTEXT_PATH='${pageContext.request.contextPath}';
    <!-- 內容固定ID為TBODY -->
    <tbody id="tbody">
 </table>
-Absolute Path is:<%=pageContext.request.contextPath %>
+Absolute Path is:<%=request.getContextPath()%>
+<s:set  var="CONTEXT"  value="#request.get('javax.servlet.forward.context_path')" />
+<br/><s:property value="%{CONTEXT}" /> 
 </div>
  
 </body>
